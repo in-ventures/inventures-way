@@ -1,8 +1,20 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+**Inventures Software Development Way**
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+Here we define rules and aligments to collaborate and ensure we give our users high quality user experiences.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+This guideline is structured around 2 sections: set-up and ongoing, each divided in several chapters as follows:
+
+A.- Setup
+	A1.- Setting-up your machine
+	A2.- Configuring Visual Studio Code
+	A3.- Services accounts
+	A4.- Git configuration
+
+B.- Ongoing
+	B1.- Does and dont's when developing
+	B2.- Team managment tools: Trello & Slack
+	B3.- Git flow practices
+
 
 ---
 
