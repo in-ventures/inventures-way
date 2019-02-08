@@ -1,33 +1,52 @@
-**Inventures Software Development Way**
+#**Inventures Software Development Way**
 
 Here we define rules and aligments to collaborate and ensure we give our users high quality user experiences.
 
 This guideline is structured around 2 sections: set-up and ongoing, each divided in several chapters as follows:
 
-A.- Setup
-	A1.- Setting-up your machine
-	A2.- Configuring Visual Studio Code
-	A3.- Services accounts
-	A4.- Git configuration
+* Setup
+	* Setting-up your machine
+	* Services accounts
+	* Configuring Visual Studio Code 
+	* Git configuration
 
-B.- Ongoing
-	B1.- Does and dont's when developing
-	B2.- Team managment tools: Trello & Slack
-	B3.- Git flow practices
+* Ongoing
+	* Does and dont's when developing
+	* Team managment tools: Trello & Slack
+	* Git flow practices
 
 
 ---
 
-## Edit a file
+## Setup
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+### Setting-up your machine
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+At Inventures we use the software most recent versions **with long term support**. Align with the team on the specific tools and versions to be used, but most likely you will need to have:
+
+* git
+* node (do not use odd versions)
+* npm
+* yarn
+* nvm
+* mongoDB
+* postgreSQL
+* angular/cli
+
+### Services accounts
+
+You have to sign up with your inventures email to all the services that you will use. **You must "log in with Google" to keep our clients information safe**. The services might change over time and could be project specific, yet very likely you will need to sign up to
+
+* Bitbucket
+* Github
+* Trello
+* Slack
+* AWS
+* Google Cloud
+* Azure
+
+
+
 
 ---
 
