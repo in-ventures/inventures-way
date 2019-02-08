@@ -11,12 +11,12 @@ This guideline is structured around 2 sections: set-up and ongoing, each divided
 	* Git configuration
 
 * Ongoing
-	* Dos and don'ts when developing
 	* Team management tools: Trello & Slack
+	* Dos and don'ts when developing
 	* Git flow practices
 
 
----
+------------------------
 
 ## Setup
 
@@ -48,10 +48,6 @@ You have to sign up with your inventures email to all the services that you will
 * Azure
 
 
-### Visual Studio Configuration
-
-//TODO
-
 ### Git configuration and safety considerations
 
 Simply, make sure before you do anything in a new project, that you create your branch (details regarding branch usage covered in subsequent section) a .gitignore file, making sure you at least add: 
@@ -62,6 +58,26 @@ Simply, make sure before you do anything in a new project, that you create your 
 
 **Do not** hardcode any credential or password in a file that you are not including into the .gitignore file. Otherwise we will be left exposed by having that info committed in our branches history
 
-See an example .gitignore file here
+See a .gitignore file example inside the example folder
 
----
+### Visual Studio Code Configuration
+
+//TODO
+
+------------------------
+
+
+## Ongoing
+
+### Team management tools: Trello & Slack
+
+// TODO
+
+### Dos and don'ts when developing
+
+// TODO
+
+
+### Git flow practices
+
+// TODO
