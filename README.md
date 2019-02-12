@@ -68,9 +68,88 @@ Simply, make sure before you do anything in a new project, that you create your 
 
 See a .gitignore file example inside the example folder
 
+### Intelectual property
+
+Do include a license.txt to all repositories, use the file on example folder as reference but always validate with Alex Hazbun.
+
 ### Visual Studio Code Configuration
 
-//TODO
+1. Copyrights
+	* Add [this extension](https://marketplace.visualstudio.com/items?itemName=psioniq.psi-header) to your VSC to handle creation of copyright headers
+	* Configure your VSC with the following configuration replacing author name and email:
+
+```JSON
+{
+  "psi-header.variables":[
+    [
+      "projectCreationYear",
+      "2019"
+    ],
+    [
+      "company",
+      "Inventures - www.inventures.cl"
+    ],
+    [
+      "copyrightholder",
+      "Incrementa Ventures SpA"
+    ],
+    [
+      "author",
+      "Mario Merino"
+    ],
+    [
+      "authoremail",
+      "mario@inventures.cl"
+    ]
+  ],
+  "psi-header.templates":[
+    {
+      "language":"*",
+      "template":[
+        "File: <<filename>>",
+        "Project: <<projectname>>",
+        "File Created: <<filecreated('dddd, Do MMMM YYYY h:mm:ss a')>>",
+        "Author: <<author>> (<<authoremail>>)",
+        "-----",
+        "Last Modified: <<dateformat('dddd, Do MMMM YYYY h:mm:ss a')>>",
+        "Modified By: <<author>> (<<authoremail>>)",
+        "-----",
+        "Copyright <<projectCreationYear>> - <<year>> <<copyrightholder>>. ALL RIGHTS RESERVED",
+        "Terms and conditions defined in license.txt",
+        "-----",
+        "<<company>>"
+      ]
+    }
+  ]
+}
+```
+2- Configure eslint, tslint and prettier...**FELIPE - please fix, this is just a place holder**
+```JSON
+{
+  "[html]":{
+    "editor.tabSize":2
+  },
+  "window.zoomLevel":0,
+  "git.enableSmartCommit":true,
+  "[javascript]":{
+
+  },
+  "[typescript]":{
+
+  },
+  "editor.tabSize":2,
+  "eslint.autoFixOnSave":true,
+  "eslint.packageManager":"yarn",
+  "eslint.validate":[
+    "javascript"
+  ],
+  "prettier.eslintIntegration":true,
+  "diffEditor.renderSideBySide":false,
+  "tslint.autoFixOnSave":true
+}
+```
+
+
 
 ------------------------
 
