@@ -77,16 +77,13 @@ See a .gitignore file example inside the example folder
 
 ## Ongoing
 
-### Team management tools: Trello & Slack
-
-// TODO
-
 ### Dos and don'ts when developing
 
-**Dos**
+**✅ Dos**
 * DRY: do not repeat yourself, i.e. factor your code in reusable modules
 * TYPINGS: use typings as much as posible so to prevent type injection erros
 * Use Merge Squash for pull request to make it easier to find different pull requests
+* Whenever creating a new file make sure the copyrights have been added
 
 **☠️ don'ts 🚨**
 * Use <any> in TypeScript - if there is no work-around be ready to have a good explanation
@@ -105,5 +102,33 @@ We follow Atlasian git flow practices ([here you can read more details](https://
 	* **dev**: Development branch. Contains the most up to date version of the code. All approved features merge into this branch
 * **Temporary branches**
 	* **feature/{developer_name}/{feature_name}**: Temprorary branch created by each developer to work on a specific new feature. It branches from, and merges back into, the dev branch using pull requests. Please use descriptive names for the feature and avoid adding commits not related to the named feature.
-	* **bugfix/{developer_name}/{bug_name}**: Used to fix a release branch without interrupting changes in the development branch, thus it branches out from the *master*. Changes should be merged into the *master* **and** *dev* branches.
+	* **bugfix/{developer_name}/{bug_name}**: Used to fix a staging branch without interrupting changes in the development branch, thus it branches out from the *master*. Changes should be merged into the *master* **and** *dev* branches.
 	* **hotfix/{developer_name}/{hot_bug_name}**: Used to quickly fix a Production branch without interrupting changes in the development branch, thus it branches from *master*. Changes should be merged into the *master* **and** *dev* branches.
+	
+#### Git flow:
+* **feature**: 
+ 1. check out *dev*
+ 2. pull *dev*
+ 3. branch from *dev* following the name convention *feature/{developer_name}/{feature_name}*
+ 4. work on your branch, and commit following the commit guidelines
+ 5. run tests locally
+ 6. check out *dev* 
+ 7. pull *dev*
+ 8. check out your feature branch
+ 9. merge with dev
+ 10. push your feature branch
+ 11. create a pull request to merge into *dev*
+* **bugfix**: Same as *feature* but using *staging* instead of *dev* for branching from and merging into.
+* **hotfix**: Same as *feature* but using *master* instead of *dev* for branching from and merging into.
+
+#### Commit structure:
+**do start** all your commits with one of these prefixed types:
+* feat (feature)
+* fix (bug fix)
+* docs (documentation)
+* style (formatting, missing semi colons, …)
+* refactor
+* test (when adding missing tests)
+* maitain (update packages, solve yarn/npm warnings)
+
+ 
