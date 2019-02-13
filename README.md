@@ -4,7 +4,7 @@
 
 **Objective**
 
-To spend less time finding bugs, solving merge conflicts, re-inventing the whell so we can spend more time developing great experiences for our clients (and doing whatever else we want) 
+To spend less time finding bugs, solving merge conflicts, re-inventing the wheel so we can spend more time developing great experiences for our clients (and doing whatever else we want) 
 
 ------------------------
 Here we define rules and alignments to collaborate and ensure we give our users high quality user experiences.
@@ -54,6 +54,7 @@ You have to sign up with your inventures email to all the services that you will
 * AWS
 * Google Cloud
 * Azure
+* APIARY
 
 
 ### Git configuration and safety considerations
@@ -177,7 +178,7 @@ We follow Atlasian git flow practices ([here you can read more details](https://
 #### Branch structure:
 * **Permament Branches:**
 	* **master**: Contains the production version of the code.
-	* **staging**: Contains the stagging version of the code. This might differ from *dev* since the we might want to lock a stagging stage whilst keep working on additiona features. This branch deploys to *stagging* 
+	* **release/{x.x.x}**: Contains the release version of the code. This might differ from *dev* since we might want to lock a stagging stage whilst keep working on additiona features. This branch deploys to *stagging*. We follow the [semantic convention] (https://semver.org/) to specify the version.
 	* **dev**: Development branch. Contains the most up to date version of the code. All approved features merge into this branch
 * **Temporary branches**
 	* **feature/{developer_name}/{feature_name}**: Temprorary branch created by each developer to work on a specific new feature. It branches from, and merges back into, the dev branch using pull requests. Please use descriptive names for the feature and avoid adding commits not related to the named feature.
