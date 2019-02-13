@@ -124,29 +124,17 @@ Do include a license.txt to all repositories, use the file on example folder as 
   ]
 }
 ```
-2- Configure eslint, tslint and prettier...**FELIPE - please fix, this is just a place holder**
+2- Configure eslint and prettier. For tslint you should create a file similar to the one added into the examples
 ```JSON
-{
-  "[html]":{
-    "editor.tabSize":2
-  },
-  "window.zoomLevel":0,
-  "git.enableSmartCommit":true,
-  "[javascript]":{
-
-  },
-  "[typescript]":{
-
-  },
-  "editor.tabSize":2,
-  "eslint.autoFixOnSave":true,
-  "eslint.packageManager":"yarn",
-  "eslint.validate":[
-    "javascript"
-  ],
+{  
+  "editor.formatOnSave":true,
+  "javascript.format.enable":false,
   "prettier.eslintIntegration":true,
-  "diffEditor.renderSideBySide":false,
-  "tslint.autoFixOnSave":true
+  "typescript.updateImportsOnFileMove.enabled":"never",
+  "prettier.singleQuote":true,
+  "editor.tabSize":2,
+  "editor.insertSpaces":true,
+  "editor.detectIndentation":false
 }
 ```
 
@@ -187,6 +175,7 @@ We follow Atlasian git flow practices ([here you can read more details](https://
 	
 #### Git flow:
 * **feature**: 
+Main goal is to ensure you start working from the most recent version of *dev* and that the pull request has the most recent version of *dev* at the moment of generating the pull request. There are several ways to achive this, for example:
  1. check out *dev*
  2. pull *dev*
  3. branch from *dev* following the name convention *feature/{developer_name}/{feature_name}*
