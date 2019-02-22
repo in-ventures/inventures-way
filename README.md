@@ -80,7 +80,21 @@ Do include a license.txt to all repositories, use the file on example folder as 
 	* Configure your VSC with the following configuration replacing author name and email:
 
 ```JSON
-{
+{   
+  "psi-header.config": {
+    "forceToTop": true,
+    "blankLinesAfter": 6,
+    "license": "Custom"
+  },
+  "psi-header.changes-tracking": {
+    "isActive": true,
+    "modAuthor": "Modified By: ",
+    "modDate": "Last Modified: ",
+    "modDateFormat": "date",
+    "include": [],
+    "exclude": ["markdown", "json"],
+    "autoHeader": "autoSave"
+  },
   "psi-header.variables":[
     [
       "projectCreationYear",
