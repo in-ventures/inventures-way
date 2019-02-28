@@ -21,6 +21,7 @@ This guideline is structured around 2 sections: set-up and ongoing, each divided
 	* Team management tools: Trello & Slack
 	* Dos and don'ts when developing
 	* Git flow practices
+	* TypeScript Comments
 
 
 ------------------------
@@ -214,4 +215,25 @@ Main goal is to ensure you start working from the most recent version of *dev* a
 * test (when adding missing tests)
 * maitain (update packages, solve yarn/npm warnings)
 
- 
+### TypeScript Comments
+Commenting your code is as important as writing the code itself since it allows us to share, review and build upon eachothers work.
+We adopted the Typescript guidelines to comment the code [TSDoc](https://github.com/Microsoft/tsdoc) so we can use tools as [TypeDoc](https://typedoc.org/guides/doccomments/) to produce automated documentation to navigate and understand our code. Below ther is an example:
+```TypeScript
+export class Statistics {
+  /**
+   * Returns the average of two numbers.
+   *
+   * @remarks
+   * This method is part of the {@link core-library#Statistics | Statistics subsystem}.
+   *
+   * @param x - The first input number
+   * @param y - The second input number
+   * @returns The arithmetic mean of `x` and `y`
+   *
+   * @beta
+   */
+  public static getAverage(x: number, y: number): number {
+    return (x + y) / 2.0;
+  }
+}
+```
