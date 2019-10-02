@@ -170,7 +170,7 @@ Do include a license.txt to all repositories, use the file on example folder as 
 * Send pull request often, as a rule of thumb do not accumulate more than one day of work
 * Document using TSDoc/JSDoc guidelines (see example below) - particularly for logic intensive features (e.g. redux)
 * Use a service to console.log only in development mode - use husky to ensure only the logger service is used
-* Add API urls as an environment variable
+* Add API and external suscriptions such as Firebase, Google maps, etc as an environment variable
 
 **☠️ don'ts 🚨**
 * Use <any> in TypeScript - if there is no work-around be ready to have a good explanation
