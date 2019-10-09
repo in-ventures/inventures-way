@@ -167,10 +167,14 @@ Do include a license.txt to all repositories, use the file on example folder as 
 * TYPINGS: use typings as much as posible so to prevent type injection erros
 * Use Merge Squash for pull request to make it easier to find different pull requests
 * Whenever creating a new file make sure the copyrights have been added
+* Send pull request often, as a rule of thumb do not accumulate more than one day of work
+* Document using TSDoc/JSDoc guidelines (see example below) - particularly for logic intensive features (e.g. redux)
+* Use a service to console.log only in development mode - use husky to ensure only the logger service is used
+* Add API and external suscriptions such as Firebase, Google maps, etc as an environment variable
 
 **☠️ don'ts 🚨**
 * Use <any> in TypeScript - if there is no work-around be ready to have a good explanation
-* Send a pull request without ensuring you have the most up to date versión of the development branch
+* Send a pull request without ensuring you have the most up to date version of the development branch
 * Use production environment variables in you local environment
 
 
@@ -215,7 +219,7 @@ Main goal is to ensure you start working from the most recent version of *dev* a
 * test (when adding missing tests)
 * maitain (update packages, solve yarn/npm warnings)
 
-### TypeScript Comments
+### TS Comments
 Commenting your code is as important as writing the code itself since it allows us to share, review and build upon eachothers work.
 We adopted the Typescript guidelines to comment the code [TSDoc](https://github.com/Microsoft/tsdoc) so we can use tools as [TypeDoc](https://typedoc.org/guides/doccomments/) to produce automated documentation to navigate and understand our code. Below ther is an example:
 ```TypeScript
